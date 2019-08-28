@@ -1,0 +1,501 @@
+/* Reset */
+
+html, body, div, span, applet, object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* End reset */
+
+/* Fonts */
+
+@font-face {
+    font-family: VagRegular;
+    src: url('fonts/VAGRoundedRegular.ttf');
+}
+
+@font-face {
+    font-family: VagBold;
+    src: url('fonts/VAGRoundedBold.ttf');
+}
+
+
+/* General styles */
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: VagBold, sans-serif;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 22px;
+    line-height: 22px;
+}
+
+ul li {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    text-align: left;
+    color: #262626;
+    font-weight: bold;
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+button {
+    text-align: center;
+    border-radius: 40px;
+    background-color: #262626;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 16px 40px;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #4bb09f;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 25px;
+    display: inline-block;
+    width: 16px;
+    position: relative;
+    top: 4px;
+}
+
+.font-small {
+    font-size: 14px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.centered-block {
+    max-width: 540px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.section-wrapper {
+    margin-top: 70px;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.slim {
+    font-weight: normal !important;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 15px 60px 15px 25px;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    width: 100%;
+    min-width: 250px;
+}
+
+.btn-white {
+     background-color: white;
+     color: #4bb09f;
+}
+
+.btn-blue {
+    background-color: #4bb09f;
+    color: white;
+}
+
+.btn-bordered {
+    border: 2px solid #4bb09f;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.bg-blue {
+    background-color: #4bb09f;
+}
+
+.vag {
+    font-family: 'VagBold',sans-serif;
+}
+
+.vag-slim {
+    font-family: 'VagRegular', sans-serif;
+    font-weight: 400;
+}
+
+.monster {
+    font-family: 'Montserrat SemiBold',sans-serif !important;
+}
+
+.content-container {
+    margin-top: 70px;
+}
+
+/* navigation */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    background-color: #4bb09f;
+    color: white;
+    font-family: 'VagBold',sans-serif;
+    height: 100px;
+    padding: 10px;
+}
+
+.nav .home-button {
+    margin: 10px 30px;
+    width: 200px;
+}
+
+
+.nav .nav-left {
+    width: 20%;
+}
+
+.nav .nav-right {
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    float: right;
+    width: 80%;
+    z-index: 1000;
+}
+
+.nav .nav-right a {
+    margin: 0 30px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav .nav-right .active {
+    border-bottom: 2px solid white;
+}
+
+.counter {
+    font-size: 150px;
+    font-family: 'VagBold',sans-serif;
+    line-height: 115px;
+    text-align: left !important;
+}
+
+
+/* footer */
+footer {
+    background-color: #4bb09f;
+    padding: 40px 10px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+footer p, footer h3 {
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+.footer-border-right:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 25px;
+    color: white;
+    z-index: 100;
+    border: 2px solid white;
+    height: 100px;
+}
+
+.footer-border-left:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    color: white;
+    z-index: 100;
+    border: 2px solid white;
+    height: 100px;
+}
+
+/* End footer */
+
+/* home */
+
+.homepage-nav.nav {
+    background-color: initial;
+}
+
+.homepage-background {
+    background-color: #4bb09f;
+    z-index: 55;
+    height: 100vh;
+}
+
+.homepage-image {
+    height: 100%;
+    width: 100%;
+}
+
+.img-fixed {
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.body-el {
+    height: 100%;
+    display: flex;
+}
+
+.home-text {
+    margin-left: 70px;
+}
+
+/* Typography */
+
+.typography p {
+    font-size: 15px;
+}
+
+.vag-rounded-bold {
+    font-family: 'VagBold', sans-serif;
+    font-size: 22px;
+}
+
+.montserrat-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.montserrat-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.hierarchy {
+    margin: 100px 0 ;
+}
+
+.typography a {
+    color: #4bb09f;
+}
+
+.hierarchy-block p {
+    margin-bottom: 0;
+}
+
+.hierarchy-block h1, .hierarchy-block h2 {
+    margin-bottom: 0;
+}
+
+.hierarchy-flex {
+    display:flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.hierarchy-flex:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    border-bottom: 2px solid #808080;
+    width: 80%;
+}
+
+.hierarchy-block {
+    margin-bottom: 20px;
+}
+
+/* icons */
+
+.square-blue {
+    background-color: #4BB09F;
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+}
+
+.square-brown {
+    background-color: #BBB46D;
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+}
+
+.square-pink {
+     background-color: #DC9B8F;
+     width: 100%;
+     padding-top: 100%; /* 1:1 Aspect Ratio */
+     position: relative; /* If you want text inside of it */
+}
+
+.square-white {
+    background-color: white;
+    border: 1px solid black;
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+}
+.square-black {
+    background-color: black;
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+}
